@@ -25,7 +25,7 @@ export default function LoadingScreen() {
   }, [])
 
   return (
-    <div className="relative min-h-screen overflow-hidden flex flex-col items-center justify-center px-4 bg-gradient-to-br from-[#fff7ea] via-[#f5ede0] to-[#f0e6d6]">
+    <div className="relative min-h-screen overflow-hidden flex flex-col items-center justify-center px-4 bg-[#fff7e5]">
       <FloatingHearts />
       <FloatingAnimals />
 

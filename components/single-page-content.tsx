@@ -48,7 +48,7 @@ export default function SinglePageContent() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["hero", "introduction", "about", "testimonials", "services", "contact"]
+      const sections = ["hero", "introduction", "about", "stories", "services", "contact"]
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -73,13 +73,13 @@ export default function SinglePageContent() {
     { id: "hero", label: "Home", labelCh: "首頁" },
     { id: "introduction", label: "What is Animal Communication", labelCh: "動物溝通介紹" },
     { id: "about", label: "About", labelCh: "關於" },
-    { id: "testimonials", label: "Testimonials", labelCh: "見證" },
+    { id: "stories", label: "Stories", labelCh: "見證" },
     { id: "services", label: "Services", labelCh: "服務" },
     { id: "contact", label: "Contact", labelCh: "聯絡" },
   ]
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-[#fff7ea] via-[#f5ede0] to-[#f0e6d6]">
+    <div className="relative min-h-screen bg-[#fff7e5]">
       {showDetailPage ? (
         <AnimalCommunicationDetail onBack={() => setShowDetailPage(false)} />
       ) : (
@@ -88,7 +88,7 @@ export default function SinglePageContent() {
           <FloatingAnimals />
 
           {/* Fixed Header */}
-          <header className="fixed top-0 left-0 right-0 z-50 py-4 px-4 md:px-8 bg-[#fff7ea]/80 backdrop-blur-sm">
+          <header className="fixed top-0 left-0 right-0 z-50 py-4 px-4 md:px-8 bg-white">
             <div className="container mx-auto flex justify-between items-center">
               <div className="flex items-center">
                 <div className="w-10 h-10 mr-3">
@@ -102,7 +102,7 @@ export default function SinglePageContent() {
                 </div>
                 <div>
                   <h1 className="text-xl font-bold text-[#B47A8F]">Hazel&apos;s Animal Talk</h1>
-                  <p className="text-xs text-[#B47A8F]">毛孩悄悄話</p>
+                 
                 </div>
               </div>
 
@@ -163,11 +163,11 @@ export default function SinglePageContent() {
           </header>
 
           {/* Hero Section */}
-          <section id="hero" className="min-h-screen flex items-center justify-center px-4 md:px-8 pt-20">
+          <section id="hero" className="min-h-screen flex items-center justify-center px-4 pb- md:px-8 pt-20">
             <div className="container mx-auto text-center">
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                 <div className="mb-8 flex justify-center">
-                  <div className="w-48 h-48 md:w-64 md:h-64 relative rounded-full overflow-hidden bg-[#f0e6d6] p-2">
+                  <div className="w-48 h-48 md:w-64 md:h-64 relative rounded-full overflow-hidden p-2">
                     <Image
                       src="/images/hazel-logo.png"
                       alt="Hazel's Animal Talk Logo"
@@ -182,17 +182,37 @@ export default function SinglePageContent() {
                 <p className="text-xl md:text-2xl text-[#ebb97a] max-w-2xl mx-auto mb-4 font-medium uppercase tracking-wider">
                   LISTEN. CONNECT. UNDERSTAND.
                 </p>
-                <Button
-                  size="lg"
-                  className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white py-8"
-                  onClick={() => scrollToSection("contact")}
+                <a
+                  href="https://www.instagram.com/hazel_animaltalk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <div className="text-center">
-                    <div className="text-lg font-bold">點我馬上預約</div>
-                    <div className="text-sm">Book a session</div>
-                  </div>
-                </Button>
-              </motion.div>
+                  <Button
+                    size="lg"
+                    className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white py-8 px-8"
+                  >
+                    <div className="flex items-center justify-center gap-4">
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="60" 
+                        height="60" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2" 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round"
+                        className="inline-block"
+                      >
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <circle cx="12" cy="12" r="4.5" />
+                        <circle cx="17.5" cy="6.5" r="1.5" />
+                      </svg>
+                      <span className="text-base font-medium">Visit Instagram</span>
+                    </div>
+                  </Button>
+                </a>
+              </motion.div> 
             </div>
           </section>
 
@@ -213,27 +233,32 @@ export default function SinglePageContent() {
                   </p>
 
                   <div className="mb-8 flex justify-center">
-                    <div className="w-64 h-64 md:w-80 md:h-80 relative rounded-full overflow-hidden bg-[#f0e6d6] p-4">
+                    <div className="w-100 h-100 md:w-full md:h-80 relative  overflow-hidden p-4">
                       <Image
-                        src="/placeholder.svg?height=320&width=320"
+                        src="/images/bird.png"
                         alt="Animal Communication Illustration"
                         fill
-                        className="object-cover rounded-full"
+                        className="object-cover"
                       />
                     </div>
                   </div>
 
-                  <p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-3xl mx-auto">
-                    動物溝通，是一種透過直覺與感受，傾聽動物心聲的方式。
-                    牠們雖然不會說話，但總有方式讓我們明白：牠們也有想表達的情緒、需要與愛。
-                  </p>
+                  <p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-6xl mx-auto">
+                  『動物溝通』是一種不依賴語言的心靈對話，透過靜心與直覺，聆聽毛孩內在真正的聲音。溝通師會進入安靜、穩定的狀態，用心去接收動物傳遞來的畫面、感受、情緒，進行一場溫柔的交流。
+</p>
+<p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-6xl mx-auto">
+很多時候，其實牠們也有豐富的情緒與想法，只是用另一種方式在說話。透過動物溝通，我們可以更了解牠們的需要、牠們的愛，甚至牠們過去的經歷與心願。
+</p>
+<p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-6xl mx-auto">
+這不只是人與動物之間的橋樑，更是一段彼此理解、彼此陪伴的療癒旅程。用心傾聽，就能聽見愛的聲音。
+</p>
 
                   <Button
                     size="lg"
-                    className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white px-8 py-3"
+                    className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white px-8 py-6"
                     onClick={() => setShowDetailPage(true)}
                   >
-                    點我了解更多
+                    Read Details
                   </Button>
                 </motion.div>
               </motion.div>
@@ -265,23 +290,24 @@ export default function SinglePageContent() {
 
                 <motion.div variants={itemVariants} className="md:w-1/2">
                   <h2 className="text-4xl md:text-5xl font-bold text-[#B47A8F] mb-4">About Hazel</h2>
-                  <h3 className="text-lg md:text-xl text-[#E8A87C] font-medium uppercase tracking-wider mb-8">
+                  <h3 className="text-lg md:text-xl text-[#E8A87C] font-medium tracking-wider mb-8">
                     This more than work - it's a way of loving.
                   </h3>
                   <div className="space-y-4 text-[#B47A8F]">
-                    <p>您好，我是 Hazel，一位陪伴人與動物對話的溝通者。</p>
-                    <p>
-                      真正踏上這條路，是因為陪伴我八年的白文鳥離開了。那是我第一次那麼深刻地經歷失去。悲傷困住了我好一陣子，直到鼓起勇氣找了一位動物溝通師。
-                      在那場安靜卻深刻的對話裡，我們一起細數相處的點滴，也慢慢與自己的傷痛和解。我才知道，動物唯一的願望，是希望我們能好好生活。
+                    <p>您好，我是 Hazel，一位陪伴人與動物對話的溝通者。
                     </p>
                     <p>
-                      那時突然懂了，我們不必等到最後才說再見。
-                      如果能在牠們還在的時候，就好好傾聽與分享，就算只是今天吃了什麼、睡得安不安穩，這些平凡小事，對牠們來說，都是深刻的愛。
+                    真正踏上這條路，是因為陪伴我八年多的白文鳥離開了。那是我第一次那麼深刻地經歷失去。被悲傷困住了好一陣子，直到鼓起勇氣找了一位動物溝通師。
+在那場安靜卻深刻的對話裡，我們一起細數相處的點滴，也慢慢與自己的傷痛和解。而動物唯一的願望，是希望我們能好好生活。
                     </p>
                     <p>
-                      我希望幫助更多人與動物，在還來得及的時候好好說話，讓彼此更靠近、更安心。
-                      同時，我也將每筆動物溝通收入的 10% 捐給友善動物團體，希望透過這份能力，讓愛持續擴散出去。
+                    那時突然懂了，我們不必等到最後才說再見。
+如果能在牠們還在的時候，就好好傾聽與分享，就算只是『今天吃了什麼？』、『睡得安不安穩？』，這些平凡小事，對牠們來說，都是深刻的愛。
                     </p>
+                    <p>
+                    希望幫助更多人與動物，搭建起一個美好的橋樑，讓彼此更靠近、更安心。
+同時，每筆收入的 10% 將捐給友善動物團體，希望透過這份能力，讓愛持續流動。
+                      </p>
                     <p className="text-xl md:text-2xl text-[#ebb97a] max-w-2xl mx-auto mb-4 font-medium uppercase tracking-wider">
                       LISTEN. CONNECT. UNDERSTAND.
                     </p>
@@ -291,8 +317,8 @@ export default function SinglePageContent() {
             </div>
           </section>
 
-          {/* Testimonials Section */}
-          <section id="testimonials" className="py-20 px-4 md:px-8">
+          {/* Stories Section */}
+          <section id="stories" className="py-20 px-4 md:px-8">
             <div className="container mx-auto">
               <motion.div
                 variants={containerVariants}
@@ -302,10 +328,10 @@ export default function SinglePageContent() {
                 className="text-center mb-16"
               >
                 <h2 className="text-4xl md:text-5xl font-bold text-[#B47A8F] mb-4">來自毛孩悄悄話</h2>
-                <p className="text-xl md:text-2xl text-[#ebb97a] max-w-2xl mx-auto mb-4 font-medium uppercase tracking-wider">
+                <p className="text-xl md:text-2xl text-[#ebb97a] max-w-2xl mx-auto mb-4 font-medium tracking-wider">
                   Real stories. Honest moments.
                 </p>
-                  <p className="text-xl md:text-2xl text-[#ebb97a] max-w-2xl mx-auto mb-4 font-medium uppercase tracking-wider">
+                  <p className="text-xl md:text-2xl text-[#ebb97a] max-w-2xl mx-auto mb-4 font-medium tracking-wider">
                   Gentle connections.
                 </p>
               </motion.div>
@@ -318,19 +344,18 @@ export default function SinglePageContent() {
                 className="grid grid-cols-1 md:grid-cols-2 gap-8"
               >
                 <motion.div variants={itemVariants}>
-                  <Card className="bg-[#fff7ea]/90 backdrop-blur-sm border-none shadow-md h-full flex p-5">
-                  <div className="w-2/5 md:w-2/5 relative rounded-l-lg overflow-hidden">
+                  <Card className="bg-[#fff7ea]/90 backdrop-blur-sm border-none shadow-md h-full flex flex-col md:flex-row p-5">
+                  <div className="w-32 h-32 relative mx-auto md:mx-4 flex-shrink-0 mb-4 md:mb-0">
                     <Image 
                       src="/images/review1.png" 
                       alt="Pet review" 
-                      fill
-                      sizes="(max-width: 768px) 100vw, 40vw"
-                      style={{ objectFit: 'cover', objectPosition: 'center' }}
-                      className="rounded-l-lg"
+                      width={128}
+                      height={128}
+                      className="rounded-full w-full h-full object-cover"
                     />
                   </div>
-                    <CardContent className="pt-6">
-                      <p className="text-[#B47A8F] italic mb-4">
+                    <CardContent className="pt-4 md:pt-6">
+                      <p className="text-[#B47A8F] mb-4">
                         已經相處兩三年的『花屁ㄚ』，卻總是與人保持距離。
 這次，花屁ㄚ試著說出自己的感受，家長也表達了對牠的愛，而幾週後悄悄地有了改變……
                       </p>
@@ -352,20 +377,19 @@ export default function SinglePageContent() {
                 </motion.div>
 
                 <motion.div variants={itemVariants}>
-                <Card className="bg-[#fff7ea]/90 backdrop-blur-sm border-none shadow-md h-full flex p-5">
-                  <div className="w-2/5 md:w-2/5 relative rounded-l-lg overflow-hidden">
+                <Card className="bg-[#fff7ea]/90 backdrop-blur-sm border-none shadow-md h-full flex flex-col md:flex-row p-5">
+                <div className="w-32 h-32 relative mx-auto md:mx-4 flex-shrink-0 mb-4 md:mb-0">
                     <Image 
                       src="/images/review2.png" 
                       alt="Pet review" 
-                      fill
-                      sizes="(max-width: 768px) 100vw, 40vw"
-                      style={{ objectFit: 'cover', objectPosition: 'center' }}
-                      className="rounded-l-lg"
+                      width={128}
+                      height={128}
+                      className="rounded-full w-full h-full object-cover"
                     />
                   </div>
-                    <CardContent className="pt-6">
-                      <p className="text-[#B47A8F] italic mb-4">
-                        姊姊投餵的流浪貓『小咪』，慢慢地對這裡產生感情了，原來看似保持距離的相處，原來小咪的心中放著滿滿的感謝～
+                    <CardContent className="pt-4 md:pt-6">
+                      <p className="text-[#B47A8F] mb-4">
+                        姉姊投餵的流浪貓『小咪』，慢慢地對這裡產生感情了，原來看似保持距離的相處，原來小咪的心中放著滿滿的感謝～
 
                       </p>
                     
@@ -386,19 +410,18 @@ export default function SinglePageContent() {
                 </motion.div>
 
                 <motion.div variants={itemVariants}>
-                <Card className="bg-[#fff7ea]/90 backdrop-blur-sm border-none shadow-md h-full flex p-5">
-                  <div className="w-2/5 md:w-2/5 relative rounded-l-lg overflow-hidden">
+                <Card className="bg-[#fff7ea]/90 backdrop-blur-sm border-none shadow-md h-full flex flex-col md:flex-row p-5">
+                  <div className="w-32 h-32 relative mx-auto md:mx-4 flex-shrink-0 mb-4 md:mb-0">
                     <Image 
                       src="/images/review3.png" 
                       alt="Pet review" 
-                      fill
-                      sizes="(max-width: 768px) 100vw, 40vw"
-                      style={{ objectFit: 'cover', objectPosition: 'center' }}
-                      className="rounded-l-lg"
+                      width={128}
+                      height={128}
+                      className="rounded-full w-full h-full object-cover"
                     />
                   </div>
-                    <CardContent className="pt-6">
-                      <p className="text-[#B47A8F] italic mb-4">
+                    <CardContent className="pt-4 md:pt-6">
+                      <p className="text-[#B47A8F] mb-4">
                       家長眼中的『動物之間相處不融洽』，原來是因為『糖糖』年紀大了，身體衰退了，找不到喜歡自己的理由了……
 
                       </p>
@@ -420,19 +443,18 @@ export default function SinglePageContent() {
                 </motion.div>
 
                 <motion.div variants={itemVariants}>
-                <Card className="bg-[#fff7ea]/90 backdrop-blur-sm border-none shadow-md h-full flex p-5">
-                  <div className="w-2/5 md:w-2/5 relative rounded-l-lg overflow-hidden">
+                <Card className="bg-[#fff7ea]/90 backdrop-blur-sm border-none shadow-md h-full flex flex-col md:flex-row p-5">
+                  <div className="w-32 h-32 relative mx-auto md:mx-4 flex-shrink-0 mb-4 md:mb-0">
                     <Image 
                       src="/images/review4.png" 
                       alt="Pet review" 
-                      fill
-                      sizes="(max-width: 768px) 100vw, 40vw"
-                      style={{ objectFit: 'cover', objectPosition: 'center' }}
-                      className="rounded-l-lg"
+                      width={128}
+                      height={128}
+                      className="rounded-full w-full h-full object-cover"
                     />
                   </div>
-                    <CardContent className="pt-6">
-                      <p className="text-[#B47A8F] italic mb-4">
+                    <CardContent className="pt-4 md:pt-6">
+                      <p className="text-[#B47A8F] mb-4">
                       哥哥姊姊帶『泰迪』回家前，心裡偷偷藏的小心思，還真的瞞不過貓咪！而且他還有自己的一套『貓咪哲學』喔！
                       </p>
                     
@@ -466,7 +488,7 @@ export default function SinglePageContent() {
                 className="text-center mb-16"
               >
                 <h2 className="text-4xl md:text-5xl font-bold text-[#B47A8F] mb-4">開啟一段你與牠的專屬對話</h2>
-                <p className="text-xl md:text-2xl text-[#ebb97a] font-medium italic mb-6">
+                <p className="text-xl md:text-2xl text-[#ebb97a] font-medium mb-6">
                   Gentle guidance before we begin.
                 </p>
                 <Button
@@ -496,12 +518,16 @@ export default function SinglePageContent() {
                           <Heart className="h-8 w-8 text-[#B47A8F]" />
                         </div>
                       </div>
-                      <h3 className="text-xl font-bold text-[#B47A8F] text-center mb-4">Animal Communication</h3>
+                      <h3 className="text-xl font-bold text-[#B47A8F] text-center mb-4">服務項目
+                      </h3>
                       <p className="text-[#B47A8F] text-center mb-2">
-                        服務項目：在世動物溝通。
+                      — 在世動物溝通 —
+                      </p>
+                      <p className="text-[#B47A8F] text-center mb-10">
+                      收費方式：NT$999/60分鐘。
                       </p>
                       <p className="text-[#B47A8F] text-center mb-2">
-                        收費方式：NT$999/60分鐘。
+                      （每筆訂單10％將捐給友善動物團體。）
                       </p>
                     </CardContent>
                   </Card>
@@ -526,17 +552,18 @@ export default function SinglePageContent() {
                         </div>
                       </div>
                       <h3 className="text-xl font-bold text-[#B47A8F] text-center mb-4">預約流程
+
                       </h3>
                       <div className="flex flex-col items-center">
                         <div className="inline-block text-left">
                           <p className="text-[#B47A8F] mb-2">
-                          1. 了解『什麼是動物溝通？』</p>
+                          1. 了解『什麼是動物溝通？』。</p>
                           <p className="text-[#B47A8F] mb-2">
                           2. 填寫預約表單</p>
                           <p className="text-[#B47A8F] mb-2">
-                          3. 確認時段＆付款</p>
+                          3. 確認時段＆付款。</p>
                           <p className="text-[#B47A8F]">
-                          4. 回傳動物一個月內的照片</p>
+                          4. 確認時段＆付款。</p>
                         </div>
                       </div>
                     </CardContent>
@@ -552,17 +579,20 @@ export default function SinglePageContent() {
                         </div>
                       </div>
                       <h3 className="text-xl font-bold text-[#B47A8F] text-center mb-4">溝通須知
+
                       </h3>
                       <div className="flex flex-col items-center">
                         <div className="inline-block text-left">
                           <p className="text-[#B47A8F] mb-2">
-                          1. 動物『看向鏡頭的清晰全身照』2-3張。</p>
+                          1. 準備動物『看向鏡頭的清晰全身照』3-5張。</p>
                           <p className="text-[#B47A8F] mb-2">
-                          2. 為線上即時文字溝通。</p>
+                          2. 為線上『即時文字』溝通。</p>
                           <p className="text-[#B47A8F] mb-2">
-                          3. 沟通者需為主要照顧者。</p>
+                          3. 溝通者需為主要照顧者。</p>
                           <p className="text-[#B47A8F]">
-                          4.溝通前須向動物預告有此次溝通。</p>
+                          4.溝通前，須向動物告知有此次溝通。</p>
+                          <p className="text-[#B47A8F]">
+                          5.帶著一顆全然敞開的心，一起聊聊吧！</p>
                         </div>
                       </div>
                     </CardContent>
@@ -586,7 +616,7 @@ export default function SinglePageContent() {
                 </h2>
                 <h3 className="text-2xl md:text-3xl font-bold text-[#B47A8F] mb-6">無論是預約、提問，都歡迎你留下訊息。
                 </h3>
-                <p className="text-lg md:text-xl text-[#E8A87C] font-medium uppercase tracking-wider mb-8">
+                <p className="text-lg md:text-xl text-[#E8A87C] font-medium tracking-wider mb-8">
                 I'm here — gently, sincerely, always listening.                </p>
               </motion.div>
 

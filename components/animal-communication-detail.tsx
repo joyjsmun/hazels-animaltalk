@@ -68,7 +68,7 @@ export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicatio
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#fff7ea] via-[#f5ede0] to-[#f0e6d6]">
+    <div className="min-h-screen bg-[#fff7e5]">
       {/* Header */}
       <header className="py-6 px-4 md:px-8 bg-[#fff7ea]/80 backdrop-blur-sm">
         <div className="container mx-auto flex items-center">

@@ -81,7 +81,7 @@ export default function MainContent() {
                   className={`text-[#B47A8F] ${activeTab === "testimonials" ? "bg-[#FFE5D9]/50" : ""}`}
                   onClick={() => setActiveTab("testimonials")}
                 >
-                  Testimonials
+                  Stories
                 </Button>
               </li>
               <li>
@@ -135,7 +135,7 @@ export default function MainContent() {
         <TabsList className="hidden">
           <TabsTrigger value="services">Services</TabsTrigger>
           <TabsTrigger value="about">About</TabsTrigger>
-          <TabsTrigger value="testimonials">Testimonials</TabsTrigger>
+          <TabsTrigger value="testimonials">Stories</TabsTrigger>
           <TabsTrigger value="contact">Contact</TabsTrigger>
         </TabsList>
 
@@ -250,7 +250,7 @@ export default function MainContent() {
           </motion.div>
         </TabsContent>
 
-        {/* Testimonials Section */}
+        {/* Stories Section */}
         <TabsContent value="testimonials">
           <motion.div
             variants={containerVariants}
