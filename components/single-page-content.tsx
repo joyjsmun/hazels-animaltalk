@@ -37,6 +37,12 @@ export default function SinglePageContent() {
       },
     },
   }
+  
+  const buttonVariants = {
+    initial: { scale: 1 },
+    hover: { scale: 1.05, transition: { duration: 0.2 } },
+    tap: { scale: 0.98, transition: { duration: 0.1 } }
+  }
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
@@ -111,27 +117,41 @@ export default function SinglePageContent() {
                 <ul className="flex space-x-6">
                   {navigationItems.map((item) => (
                     <li key={item.id}>
-                      <Button
-                        variant="ghost"
-                        className={`text-[#B47A8F] ${activeSection === item.id ? "bg-[#FFE5D9]/50" : ""}`}
-                        onClick={() => scrollToSection(item.id)}
+                      <motion.div
+                        initial="initial"
+                        whileHover="hover"
+                        whileTap="tap"
+                        variants={buttonVariants}
+                        className="w-full"
                       >
+                        <Button
+                          variant="ghost"
+                          className="w-full justify-start text-lg text-[#B47A8F] hover:text-[#9D6A7F] hover:bg-transparent"
+                          onClick={() => scrollToSection(item.id)}
+                        >
                         {item.label}
                       </Button>
+                      </motion.div>
                     </li>
                   ))}
                 </ul>
               </nav>
 
               {/* Mobile Menu Button */}
-              <Button
-                variant="ghost"
-                size="icon"
-                className="md:hidden text-[#B47A8F]"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              <motion.div
+                initial="initial"
+                whileHover="hover"
+                whileTap="tap"
+                variants={buttonVariants}
               >
-                {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                <Button
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  variant="ghost"
+                  className="md:hidden p-2 text-[#B47A8F]"
+                >
+                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </Button>
+              </motion.div>
             </div>
 
             {/* Mobile Navigation Menu */}
@@ -145,16 +165,23 @@ export default function SinglePageContent() {
                 <ul className="space-y-2">
                   {navigationItems.map((item) => (
                     <li key={item.id}>
-                      <Button
-                        variant="ghost"
-                        className={`w-full justify-start text-[#B47A8F] ${
-                          activeSection === item.id ? "bg-[#FFE5D9]/50" : ""
-                        }`}
-                        onClick={() => scrollToSection(item.id)}
+                      <motion.div
+                        initial="initial"
+                        whileHover="hover"
+                        whileTap="tap"
+                        variants={buttonVariants}
                       >
+                        <Button
+                          variant="ghost"
+                          className={`w-full justify-start text-[#B47A8F] ${
+                            activeSection === item.id ? "bg-[#FFE5D9]/50" : ""
+                          }`}
+                          onClick={() => scrollToSection(item.id)}
+                        >
                         <span className="mr-2">{item.label}</span>
                         <span className="text-sm opacity-70">{item.labelCh}</span>
                       </Button>
+                      </motion.div>
                     </li>
                   ))}
                 </ul>
@@ -187,10 +214,16 @@ export default function SinglePageContent() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button
-                    size="lg"
-                    className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white py-8 px-6"
+                  <motion.div
+                    initial="initial"
+                    whileHover="hover"
+                    whileTap="tap"
+                    variants={buttonVariants}
                   >
+                    <Button
+                      size="lg"
+                      className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white py-8 px-6"
+                    >
                     <div className="flex items-center justify-center gap-4">
                       <svg 
                         xmlns="http://www.w3.org/2000/svg" 
@@ -211,6 +244,7 @@ export default function SinglePageContent() {
                       <span className="text-base font-medium flex items-center">Visit Instagram <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></span>
                     </div>
                   </Button>
+                  </motion.div>
                 </a>
               </motion.div> 
             </div>
@@ -253,11 +287,17 @@ export default function SinglePageContent() {
 這不只是人與動物之間的橋樑，更是一段彼此理解、彼此陪伴的療癒旅程。用心傾聽，就能聽見愛的聲音。
 </p>
 
-                  <Button
-                    size="lg"
-                    className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white px-8 py-6"
-                    onClick={() => setShowDetailPage(true)}
+                  <motion.div
+                    initial="initial"
+                    whileHover="hover"
+                    whileTap="tap"
+                    variants={buttonVariants}
                   >
+                    <Button
+                      size="lg"
+                      className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white px-8 py-8"
+                      onClick={() => setShowDetailPage(true)}
+                    >
                     <span className="flex items-center text-lg font-medium">
                       了解更多
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -265,6 +305,7 @@ export default function SinglePageContent() {
                       </svg>
                     </span>
                   </Button>
+                  </motion.div>
                 </motion.div>
               </motion.div>
             </div>
@@ -461,7 +502,7 @@ export default function SinglePageContent() {
                       </div>
                         <div>
                           <a 
-  href="https://www.instagram.com/p/DI-jbMNToR4/?igsh=MXhpMGFveDI5OXZuNA==" 
+  href="https://www.instagram.com/p/DI-jbMNToR4/?igsh=MTVpcjUxeDdwd3Jj" 
   target="_blank" 
   rel="noopener noreferrer" 
   className="text-sm text-[#B47A8F] flex items-center hover:underline cursor-pointer"
@@ -541,15 +582,22 @@ export default function SinglePageContent() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                    <Button
-                      size="lg"
-                      className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white py-8"
+                    <motion.div
+                      initial="initial"
+                      whileHover="hover"
+                      whileTap="tap"
+                      variants={buttonVariants}
                     >
+                      <Button
+                        size="lg"
+                        className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white py-8"
+                      >
                       <div className="text-center">
                         <div className="text-lg font-medium">預約表單</div>
                         <div className="text-sm flex items-center justify-center">Book a session <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></div>
                       </div>
                     </Button>
+                    </motion.div>
                 </a>
               </motion.div>
 
@@ -716,6 +764,19 @@ export default function SinglePageContent() {
                     <div className="flex items-center">
                       <Mail className="h-5 w-5 text-[#B47A8F] mr-3" />
                       <p className="text-[#B47A8F]">hazel.healing66@gmail.com</p>
+                    </div>
+                    
+                    <div className="flex items-center">
+                      <div className="text-[#B47A8F] mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                          <polyline points="14 2 14 8 20 8"></polyline>
+                          <line x1="16" y1="13" x2="8" y2="13"></line>
+                          <line x1="16" y1="17" x2="8" y2="17"></line>
+                          <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                      </div>
+                      <p className="text-[#B47A8F] flex items-center">預約表單<a href="https://forms.gle/JqMtwd3UaZTMYa9p9" target="_blank" rel="noopener noreferrer" className="flex items-center hover:underline"> - Reservation Form <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a></p>
                     </div>
                     <div className="flex items-center">
                       <MapPin className="h-5 w-5 text-[#B47A8F] mr-3" />
