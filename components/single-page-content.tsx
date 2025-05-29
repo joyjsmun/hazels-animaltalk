@@ -619,7 +619,7 @@ export default function SinglePageContent() {
               >
                 <h2 className="text-4xl md:text-5xl font-bold text-[#B47A8F] mb-4">您正在找的，也許就是這裡。
                 </h2>
-                <h3 className="text-2xl md:text-3xl font-bold text-[#B47A8F] mb-6">無論是預約、提問，都歡迎你留下訊息。
+                <h3 className="text-2xl md:text-2xl font-medium text-[#B47A8F] mb-6">無論是預約、提問，都歡迎你留下訊息。
                 </h3>
                 <p className="text-lg md:text-xl text-[#E8A87C] font-medium tracking-wider mb-8">
                 I'm here — gently, sincerely, always listening.                </p>
@@ -633,6 +633,7 @@ export default function SinglePageContent() {
                 className="flex justify-center"
               >
                 <motion.div variants={itemVariants} className="max-w-md mx-auto text-center">
+                  
                   <h3 className="text-2xl font-bold text-[#B47A8F] mb-6">Contact Information</h3>
                   <div className="space-y-6">
                     <div className="flex items-center">
@@ -643,7 +644,7 @@ export default function SinglePageContent() {
                           <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
                         </svg>
                       </div>
-                      <p className="text-[#B47A8F]">IG : <a href="https://www.instagram.com/hazel_animaltalk/">hazel_animaltalk</a></p>
+                      <p className="text-[#B47A8F] flex items-center">IG : <a href="https://www.instagram.com/hazel_animaltalk/" target="_blank" rel="noopener noreferrer" className="flex items-center hover:underline">hazel_animaltalk <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a></p>
                     </div>
                     <div className="flex items-center">
                       <Mail className="h-5 w-5 text-[#B47A8F] mr-3" />
