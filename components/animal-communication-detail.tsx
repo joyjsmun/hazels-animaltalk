@@ -179,8 +179,7 @@ export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicatio
 
                 <div className="mt-8 text-center">
                   <p className="text-lg font-medium text-[#B47A8F] rounded-lg p-4 inline-block">
-                    其實，只要你願意就是最適合的時間！
-                  </p>
+                  其實，無論什麼時候，只要願意敞開心去傾聽，就是最棒的時機！                  </p>
                 </div>
               </CardContent>
             </Card>

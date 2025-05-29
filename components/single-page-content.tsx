@@ -797,8 +797,8 @@ export default function SinglePageContent() {
                     <Image
                       src="/images/hazel-logo.png"
                       alt="Hazel's Animal Talk Logo"
-                      width={36}
-                      height={36}
+                      width={40}
+                      height={40}
                       className="object-contain"
                     />
                   </div>
