@@ -95,8 +95,8 @@ export default function SinglePageContent() {
                   <Image
                     src="/images/hazel-logo.png"
                     alt="Hazel's Animal Talk Logo"
-                    width={40}
-                    height={40}
+                    width={44}
+                    height={44}
                     className="object-contain"
                   />
                 </div>
@@ -163,11 +163,11 @@ export default function SinglePageContent() {
           </header>
 
           {/* Hero Section */}
-          <section id="hero" className="min-h-screen flex items-center justify-center px-4 pb- md:px-8 pt-20">
+          <section id="hero" className="min-h-screen flex items-center justify-center px-4 md:px-8 pt-16">
             <div className="container mx-auto text-center">
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                 <div className="mb-8 flex justify-center">
-                  <div className="w-48 h-48 md:w-64 md:h-64 relative rounded-full overflow-hidden p-2">
+                  <div className="w-48 h-48 md:w-64 md:h-60 relative rounded-full overflow-hidden p-2">
                     <Image
                       src="/images/hazel-logo.png"
                       alt="Hazel's Animal Talk Logo"
@@ -177,9 +177,9 @@ export default function SinglePageContent() {
                     />
                   </div>
                 </div>
-                <h1 className="text-4xl md:text-6xl font-bold text-[#B47A8F] mb-4">Hazel&apos;s Animal Talk</h1>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#B47A8F] mb-6">讓每份陪伴，充滿愛與理解。</h2>
-                <p className="text-xl md:text-2xl text-[#ebb97a] max-w-2xl mx-auto mb-4 font-medium uppercase tracking-wider">
+                <h1 className="text-4xl md:text-6xl font-bold text-[#B47A8F] mb-6">Hazel&apos;s Animal Talk</h1>
+                <h2 className="text-3xl md:text-4xl font-semibold text-[#B47A8F] mb-6">讓每份陪伴，充滿愛與理解。</h2>
+                <p className="text-xl md:text-2xl text-[#ebb97a] max-w-2xl mx-auto mb-6 font-medium uppercase tracking-wider">
                   LISTEN. CONNECT. UNDERSTAND.
                 </p>
                 <a
@@ -189,7 +189,7 @@ export default function SinglePageContent() {
                 >
                   <Button
                     size="lg"
-                    className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white py-8 px-8"
+                    className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white py-8 px-6"
                   >
                     <div className="flex items-center justify-center gap-4">
                       <svg 
@@ -227,7 +227,7 @@ export default function SinglePageContent() {
                 className="text-center max-w-4xl mx-auto"
               >
                 <motion.div variants={itemVariants}>
-                  <h2 className="text-4xl md:text-5xl font-bold text-[#B47A8F] mb-4">什麼是動物溝通？</h2>
+                  <h2 className="text-4xl md:text-5xl font-semibold text-[#B47A8F] mb-4">什麼是動物溝通？</h2>
                   <p className="text-xl md:text-2xl text-[#ebb97a] font-medium italic mb-8">
                     It's not magic. It's listening with the heart.
                   </p>
@@ -501,7 +501,7 @@ export default function SinglePageContent() {
                       className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white py-8"
                     >
                       <div className="text-center">
-                        <div className="text-lg font-bold">點我馬上預約</div>
+                        <div className="text-lg font-medium">預約表單</div>
                         <div className="text-sm">Book a session</div>
                       </div>
                     </Button>
@@ -556,7 +556,7 @@ export default function SinglePageContent() {
                           </svg>
                         </div>
                       </div>
-                      <h3 className="text-xl font-bold text-[#B47A8F] text-center mb-4">預約流程
+                      <h3 className="text-xl font-semibold text-[#B47A8F] text-center mb-4">預約流程
 
                       </h3>
                       <div className="flex flex-col items-center">
@@ -568,7 +568,7 @@ export default function SinglePageContent() {
                           <p className="text-[#B47A8F] mb-2">
                           3. 確認時段＆付款。</p>
                           <p className="text-[#B47A8F]">
-                          4. 確認時段＆付款。</p>
+                          4. 付款後即預約成功。</p>
                         </div>
                       </div>
                     </CardContent>
@@ -608,7 +608,7 @@ export default function SinglePageContent() {
           </section>
 
           {/* Contact Section */}
-          <section id="contact" className="py-20 px-4 md:px-8 bg-[#f5ede0]/60">
+          <section id="contact" className="py-16 px-4 md:px-8 bg-[#f5ede0]/60">
             <div className="container mx-auto">
               <motion.div
                 variants={containerVariants}
@@ -617,11 +617,11 @@ export default function SinglePageContent() {
                 viewport={{ once: true }}
                 className="text-center mb-16"
               >
-                <h2 className="text-4xl md:text-5xl font-bold text-[#B47A8F] mb-4">您正在找的，也許就是這裡。
+                <h2 className="text-4xl md:text-5xl font-semibold text-[#B47A8F] mb-4">您正在找的，也許就是這裡。
                 </h2>
                 <h3 className="text-2xl md:text-2xl font-medium text-[#B47A8F] mb-6">無論是預約、提問，都歡迎你留下訊息。
                 </h3>
-                <p className="text-lg md:text-xl text-[#E8A87C] font-medium tracking-wider mb-8">
+                <p className="text-lg md:text-xl text-[#E8A87C] font-medium tracking-wider mb-4">
                 I'm here — gently, sincerely, always listening.                </p>
               </motion.div>
 
@@ -633,6 +633,17 @@ export default function SinglePageContent() {
                 className="flex justify-center"
               >
                 <motion.div variants={itemVariants} className="max-w-md mx-auto text-center">
+                  <div className="flex justify-center mb-8">
+                    <div className="rounded-full overflow-hidden shadow-lg w-40 h-40 md:w-56 md:h-56">
+                      <Image
+                        src="/images/contact.png"
+                        alt="Contact"
+                        width={224}
+                        height={224}
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
+                  </div>
                   
                   <h3 className="text-2xl font-bold text-[#B47A8F] mb-6">Contact Information</h3>
                   <div className="space-y-6">
@@ -669,14 +680,13 @@ export default function SinglePageContent() {
                     <Image
                       src="/images/hazel-logo.png"
                       alt="Hazel's Animal Talk Logo"
-                      width={32}
-                      height={32}
+                      width={36}
+                      height={36}
                       className="object-contain"
                     />
                   </div>
                   <div>
                     <h2 className="text-lg font-bold text-[#B47A8F]">Hazel&apos;s Animal Talk</h2>
-                    <p className="text-xs text-[#B47A8F]">毛孩悄悄話</p>
                   </div>
                 </div>
 
