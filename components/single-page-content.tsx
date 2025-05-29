@@ -232,24 +232,24 @@ export default function SinglePageContent() {
                     It's not magic. It's listening with the heart.
                   </p>
 
-                  <div className="mb-8 flex justify-center">
-                    <div className="w-100 h-100 md:w-[30rem] md:h-[23rem] relative  overflow-hidden p-4">
+                  <div className="mb-4 md:mb-8 flex justify-center">
+                    <div className="w-[300px] h-[300px] md:w-[30rem] md:h-[23rem] relative overflow-hidden p-2 md:p-4">
                       <Image
                         src="/images/bird.png"
                         alt="Animal Communication Illustration"
                         fill
-                        className="object-cover"
+                        className="object-contain"
                       />
                     </div>
                   </div>
 
-                  <p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-6xl text-left">
+                  <p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-4 md:mb-8 max-w-6xl text-left">
                   『動物溝通』是一種不依賴語言的心靈對話，透過靜心與直覺，聆聽毛孩內在真正的聲音。溝通師會進入安靜、穩定的狀態，用心去接收動物傳遞來的畫面、感受、情緒，進行一場溫柔的交流。
 </p>
-<p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-6xl text-left">
+<p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-4 md:mb-8 max-w-6xl text-left">
 很多時候，其實牠們也有豐富的情緒與想法，只是用另一種方式在說話。透過動物溝通，我們可以更了解牠們的需要、牠們的愛，甚至牠們過去的經歷與心願。
 </p>
-<p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-6xl text-left">
+<p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-4 md:mb-8 max-w-6xl text-left">
 這不只是人與動物之間的橋樑，更是一段彼此理解、彼此陪伴的療癒旅程。用心傾聽，就能聽見愛的聲音。
 </p>
 
@@ -547,7 +547,7 @@ export default function SinglePageContent() {
                     >
                       <div className="text-center">
                         <div className="text-lg font-medium">預約表單</div>
-                        <div className="text-sm">Book a session</div>
+                        <div className="text-sm flex items-center justify-center">Book a session <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></div>
                       </div>
                     </Button>
                 </a>
