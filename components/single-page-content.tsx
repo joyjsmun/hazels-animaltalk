@@ -671,13 +671,13 @@ export default function SinglePageContent() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="text-center mb-16"
+                className="text-center mb-12"
               >
                 <h2 className="text-4xl md:text-5xl font-semibold text-[#B47A8F] mb-4">您正在找的，也許就是這裡。
                 </h2>
-                <h3 className="text-2xl md:text-2xl font-medium text-[#B47A8F] mb-6">無論是預約、提問，都歡迎你留下訊息。
+                <h3 className="text-lg md:text-2xl font-medium text-[#B47A8F] mb-6">無論是預約、提問，都歡迎你留下訊息。
                 </h3>
-                <p className="text-lg md:text-xl text-[#E8A87C] font-medium tracking-wider mb-4">
+                <p className="text-lg md:text-xl text-[#E8A87C] font-medium tracking-wider">
                 I'm here — gently, sincerely, always listening.                </p>
               </motion.div>
 
