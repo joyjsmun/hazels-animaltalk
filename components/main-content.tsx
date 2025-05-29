@@ -51,7 +51,6 @@ export default function MainContent() {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-[#B47A8F]">Hazel&apos;s Animal Talk</h1>
-              <p className="text-sm text-[#B47A8F]">毛孩悄悄話</p>
             </div>
           </div>
 
@@ -114,7 +113,6 @@ export default function MainContent() {
               </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-[#B47A8F] mb-4">Hazel&apos;s Animal Talk</h1>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#B47A8F] mb-6">毛孩悄悄話</h2>
             <p className="text-xl md:text-2xl text-[#B47A8F] max-w-2xl mx-auto mb-4">連結您與寵物的心靈橋樑</p>
             <p className="text-lg md:text-xl text-[#E8A87C] font-medium uppercase tracking-wider mb-8">
               Listen. Connect. Understand.
@@ -445,7 +443,6 @@ export default function MainContent() {
               </div>
               <div>
                 <h2 className="text-lg font-bold text-[#B47A8F]">Hazel&apos;s Animal Talk</h2>
-                <p className="text-xs text-[#B47A8F]">毛孩悄悄話</p>
               </div>
             </div>
 

@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, Heart } from "lucide-react"
@@ -11,6 +12,37 @@ interface AnimalCommunicationDetailProps {
 }
 
 export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicationDetailProps) {
+  // Add useEffect to check for localStorage flag and scroll to Q&A section
+  useEffect(() => {
+    // Check if we need to scroll to the Q&A section
+    const shouldScrollToQA = localStorage.getItem('scrollToQA') === 'true';
+    
+    if (shouldScrollToQA) {
+      // Clear the flag
+      localStorage.removeItem('scrollToQA');
+      
+      // Find all h2 elements
+      const headings = document.querySelectorAll('h2');
+      let qaHeading: HTMLHeadingElement | null = null;
+      
+      // Find the heading that contains the Q&A text
+      headings.forEach(heading => {
+        if (heading.textContent && heading.textContent.includes('關於動物溝通 Ｑ&Ａ')) {
+          qaHeading = heading;
+        }
+      });
+      
+      // Scroll to the Q&A section if found
+      if (qaHeading) {
+        setTimeout(() => {
+          if (qaHeading) {
+            qaHeading.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 500); // Give some time for the page to render
+      }
+    }
+  }, []);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -87,7 +119,6 @@ export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicatio
             </div>
             <div>
               <h1 className="text-xl font-bold text-[#B47A8F]">Hazel&apos;s Animal Talk</h1>
-              <p className="text-xs text-[#B47A8F]">毛孩悄悄話</p>
             </div>
           </div>
         </div>
@@ -108,7 +139,7 @@ export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicatio
                   <div className="p-3 bg-[#fff]/70 rounded-full mr-4">
                     <Heart className="h-8 w-8 text-[#B47A8F]" />
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#B47A8F]">關於動物溝通 Ｑ&Ａ</h2>
+                  <h2 className="text-2xl md:text-4xl font-bold text-[#B47A8F]">關於動物溝通 Ｑ&Ａ</h2>
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-8">
@@ -155,7 +186,7 @@ export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicatio
                       />
                     </svg>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#B47A8F]">什麼時候需要動物溝通?</h2>
+                  <h2 className="text-2xl md:text-4xl font-bold text-[#B47A8F]">什麼時候需要動物溝通?</h2>
                 </div>
 
                 <div className="mb-8">

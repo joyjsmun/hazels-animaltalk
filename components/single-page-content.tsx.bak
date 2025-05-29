@@ -731,9 +731,7 @@ export default function SinglePageContent() {
                     />
                   </div>
                   <div>
-                    <h2 className="text-lg font-bold text-[#B47A8F]">Hazel&apos;s Animal Talk</h2>
-                    <p className="text-xs text-[#B47A8F]">毛孩悄悄話</p>
-                  </div>
+                    <h2 className="text-lg font-bold text-[#B47A8F]">Hazel&apos;s Animal Talk</h2>                  </div>
                 </div>
 
                 <div className="text-center md:text-right">

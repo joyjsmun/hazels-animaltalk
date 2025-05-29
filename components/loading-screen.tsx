@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react"
 import { Progress } from "@/components/ui/progress"
 import FloatingHearts from "@/components/animations/floating-hearts"
-import FloatingAnimals from "@/components/animations/floating-animals"
 import PawPrintLoader from "@/components/animations/paw-print-loader"
 import Image from "next/image"
 
@@ -27,7 +26,6 @@ export default function LoadingScreen() {
   return (
     <div className="relative min-h-screen overflow-hidden flex flex-col items-center justify-center px-4 bg-[#fff7e5]">
       <FloatingHearts />
-      <FloatingAnimals />
 
       <div className="z-10 text-center max-w-3xl">
         <div className="mb-6 flex justify-center">
@@ -44,7 +42,6 @@ export default function LoadingScreen() {
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold text-[#B47A8F] mb-2">Hazel&apos;s Animal Talk</h1>
-        <h2 className="text-3xl md:text-5xl font-bold text-[#B47A8F] mb-6">毛孩悄悄話</h2>
         <p className="text-lg md:text-xl text-[#B47A8F] mb-8">連結您與寵物的心靈橋樑</p>
 
         <div className="mb-8">
