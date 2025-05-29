@@ -233,7 +233,7 @@ export default function SinglePageContent() {
                   </p>
 
                   <div className="mb-8 flex justify-center">
-                    <div className="w-100 h-100 md:w-full md:h-80 relative  overflow-hidden p-4">
+                    <div className="w-100 h-100 md:w-[30rem] md:h-[23rem] relative  overflow-hidden p-4">
                       <Image
                         src="/images/bird.png"
                         alt="Animal Communication Illustration"
@@ -243,13 +243,13 @@ export default function SinglePageContent() {
                     </div>
                   </div>
 
-                  <p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-6xl mx-auto">
+                  <p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-6xl text-left">
                   『動物溝通』是一種不依賴語言的心靈對話，透過靜心與直覺，聆聽毛孩內在真正的聲音。溝通師會進入安靜、穩定的狀態，用心去接收動物傳遞來的畫面、感受、情緒，進行一場溫柔的交流。
 </p>
-<p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-6xl mx-auto">
+<p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-6xl text-left">
 很多時候，其實牠們也有豐富的情緒與想法，只是用另一種方式在說話。透過動物溝通，我們可以更了解牠們的需要、牠們的愛，甚至牠們過去的經歷與心願。
 </p>
-<p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-6xl mx-auto">
+<p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-8 max-w-6xl text-left">
 這不只是人與動物之間的橋樑，更是一段彼此理解、彼此陪伴的療癒旅程。用心傾聽，就能聽見愛的聲音。
 </p>
 
@@ -258,7 +258,7 @@ export default function SinglePageContent() {
                     className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white px-8 py-6"
                     onClick={() => setShowDetailPage(true)}
                   >
-                    <span className="flex items-center">
+                    <span className="flex items-center text-lg font-medium">
                       了解更多
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -374,7 +374,17 @@ export default function SinglePageContent() {
                         </svg>
                       </div>
                         <div>
-                          <p className="text-sm text-[#B47A8F] flex items-center">Visit Instagram <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></p>
+                          <a 
+  href="https://www.instagram.com/p/DI0cK1Xz1p2/?igsh=MWdoZzUwdHJ4NDA4ZA==" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="text-sm text-[#B47A8F] flex items-center hover:underline cursor-pointer"
+>
+  Visit Instagram 
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+  </svg>
+</a>
                         </div>
                       </div>
                     </CardContent>
@@ -407,7 +417,17 @@ export default function SinglePageContent() {
                         </svg>
                       </div>
                         <div>
-                          <p className="text-sm text-[#B47A8F] flex items-center">Visit Instagram <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></p>
+                          <a 
+  href="https://www.instagram.com/p/DIs4cc_THJ4/?img_index=1&igsh=b2pybmY3MG94c3ls" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="text-sm text-[#B47A8F] flex items-center hover:underline cursor-pointer"
+>
+  Visit Instagram 
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+  </svg>
+</a>
                         </div>
                       </div>
                     </CardContent>
@@ -440,7 +460,17 @@ export default function SinglePageContent() {
                         </svg>
                       </div>
                         <div>
-                          <p className="text-sm text-[#B47A8F] flex items-center">Visit Instagram <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></p>
+                          <a 
+  href="https://www.instagram.com/p/DI-jbMNToR4/?igsh=MXhpMGFveDI5OXZuNA==" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="text-sm text-[#B47A8F] flex items-center hover:underline cursor-pointer"
+>
+  Visit Instagram 
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+  </svg>
+</a>
                         </div>
                       </div>
                     </CardContent>
@@ -472,7 +502,17 @@ export default function SinglePageContent() {
                         </svg>
                       </div>
                         <div>
-                          <p className="text-sm text-[#B47A8F] flex items-center">Visit Instagram <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></p>
+                          <a 
+  href="https://www.instagram.com/p/DIlUwwUTtLo/?igsh=MTVpcjUxeDdwd3Jj" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="text-sm text-[#B47A8F] flex items-center hover:underline cursor-pointer"
+>
+  Visit Instagram 
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+  </svg>
+</a>
                         </div>
                       </div>
                     </CardContent>
@@ -492,7 +532,7 @@ export default function SinglePageContent() {
                 viewport={{ once: true }}
                 className="text-center mb-16"
               >
-                <h2 className="text-4xl md:text-5xl font-bold text-[#B47A8F] mb-4">開啟一段你與牠的專屬對話</h2>
+                <h2 className="text-4xl md:text-5xl font-bold text-[#B47A8F] mb-4">開啟一段屬於你們的對話</h2>
                 <p className="text-xl md:text-2xl text-[#ebb97a] font-medium mb-6">
                   Gentle guidance before we begin.
                 </p>
@@ -569,7 +609,18 @@ export default function SinglePageContent() {
                           <p className="text-[#B47A8F] mb-2">
                           1. 了解『什麼是動物溝通？』。</p>
                           <p className="text-[#B47A8F] mb-2">
-                          2. 填寫預約表單</p>
+                          2. <a 
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfFCYgNOFNJhBZd0DFbJ-XjqQ-JYgpQnLBs-XVq9lJBq1DKHA/viewform" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="hover:underline cursor-pointer flex items-center inline-flex"
+                          >
+                            填寫預約表單
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                          </a>
+                          </p>
                           <p className="text-[#B47A8F] mb-2">
                           3. 確認時段＆付款。</p>
                           <p className="text-[#B47A8F]">
