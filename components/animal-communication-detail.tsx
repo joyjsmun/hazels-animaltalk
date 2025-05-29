@@ -103,21 +103,35 @@ export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicatio
           {/* About Animal Communication Section */}
           <motion.div variants={itemVariants}>
             <Card className="bg-[#fff7ea]/95 backdrop-blur-sm border-none shadow-lg">
-              <CardContent className="p-8">
+              <CardContent className="p-8 bg-[#f7e1c9]">
                 <div className="flex items-center mb-8">
-                  <div className="p-3 bg-[#f0e6d6] rounded-full mr-4">
+                  <div className="p-3 bg-[#fff]/70 rounded-full mr-4">
                     <Heart className="h-8 w-8 text-[#B47A8F]" />
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold text-[#B47A8F]">關於動物溝通 Ｑ&Ａ</h2>
                 </div>
 
-                <div className="space-y-6">
-                  {qaItems.map((item, index) => (
-                    <motion.div key={index} variants={itemVariants} className="border-l-4 border-[#E8A87C] pl-6 py-4">
-                      <h3 className="text-lg font-bold text-[#B47A8F] mb-3">Ｑ：{item.question}</h3>
-                      <p className="text-[#B47A8F] leading-relaxed">Ａ：{item.answer}</p>
-                    </motion.div>
-                  ))}
+                <div className="flex flex-col md:flex-row gap-8">
+                  <div className="space-y-6 md:w-3/5">
+                    {qaItems.map((item, index) => (
+                      <motion.div key={index} variants={itemVariants} className="border-l-4 border-[#E8A87C] pl-6 py-4">
+                        <h3 className="text-lg font-bold text-[#B47A8F] mb-3">Ｑ：{item.question}</h3>
+                        <p className="text-[#B47A8F] leading-relaxed">Ａ：{item.answer}</p>
+                      </motion.div>
+                    ))}
+                  </div>
+                  
+                  <div className="md:w-2/5 flex items-center justify-center">
+                    <div className="relative w-full h-full max-h-[500px]">
+                      <Image 
+                        src="/images/qna.png" 
+                        alt="Animal Communication QnA" 
+                        width={400}
+                        height={500}
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -126,9 +140,9 @@ export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicatio
           {/* When to Use Animal Communication Section */}
           <motion.div variants={itemVariants}>
             <Card className="bg-[#fff7ea]/95 backdrop-blur-sm border-none shadow-lg">
-              <CardContent className="p-8">
+              <CardContent className="p-8 bg-[#f7e1c9]">
                 <div className="flex items-center mb-8">
-                  <div className="p-3 bg-[#f0e6d6] rounded-full mr-4">
+                  <div className="p-3 bg-[#fff]/70 rounded-full mr-4">
                     <svg
                       className="h-8 w-8 text-[#B47A8F]"
                       viewBox="0 0 24 24"
@@ -155,7 +169,7 @@ export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicatio
                     <motion.div
                       key={index}
                       variants={itemVariants}
-                      className="flex items-center p-4 bg-[#f0e6d6]/70 rounded-lg"
+                      className="flex items-center p-4 bg-[#fff]/70 rounded-lg"
                     >
                       <div className="w-2 h-2 bg-[#E8A87C] rounded-full mr-4 flex-shrink-0"></div>
                       <p className="text-[#B47A8F] font-medium">{item}</p>
@@ -164,7 +178,7 @@ export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicatio
                 </div>
 
                 <div className="mt-8 text-center">
-                  <p className="text-lg font-medium text-[#B47A8F] bg-[#f0e6d6]/70 rounded-lg p-4 inline-block">
+                  <p className="text-lg font-medium text-[#B47A8F] rounded-lg p-4 inline-block">
                     其實，只要你願意就是最適合的時間！
                   </p>
                 </div>
