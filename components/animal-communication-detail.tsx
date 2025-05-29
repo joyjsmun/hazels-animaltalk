@@ -49,12 +49,12 @@ export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicatio
     },
     {
       question: "溝通時長大約多久？",
-      answer: "首次溝通約50-60分鐘。",
+      answer: "首次溝通約60分鐘。",
     },
     {
       question: "溝通後，動物是不是就會乖乖聽話？",
       answer:
-        "動物跟我們一樣，有自己的意願與節奏，溝通不是命令，而是傾聽與理解。所以我們會尊重他們是否願意分享，以及願意分享的深度與方式。",
+        "『溝通不是命令』，動物跟我們一樣，有自己的意願與節奏。我們能做的是『傾聽與理解』，並且尊重牠們是否願意分享，以及願意分享的深度與方式～",
     },
   ]
 
@@ -108,7 +108,7 @@ export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicatio
                   <div className="p-3 bg-[#f0e6d6] rounded-full mr-4">
                     <Heart className="h-8 w-8 text-[#B47A8F]" />
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#B47A8F]">關於動物溝通</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#B47A8F]">關於動物溝通 Ｑ&Ａ</h2>
                 </div>
 
                 <div className="space-y-6">

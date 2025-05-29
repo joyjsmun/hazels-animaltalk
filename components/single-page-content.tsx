@@ -491,16 +491,21 @@ export default function SinglePageContent() {
                 <p className="text-xl md:text-2xl text-[#ebb97a] font-medium mb-6">
                   Gentle guidance before we begin.
                 </p>
-                <Button
-                  size="lg"
-                  className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white py-8"
-                  onClick={() => scrollToSection("contact")}
+                <a
+                  href="https://forms.gle/JqMtwd3UaZTMYa9p9"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <div className="text-center">
-                    <div className="text-lg font-bold">點我馬上預約</div>
-                    <div className="text-sm">Book a session</div>
-                  </div>
-                </Button>
+                    <Button
+                      size="lg"
+                      className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white py-8"
+                    >
+                      <div className="text-center">
+                        <div className="text-lg font-bold">點我馬上預約</div>
+                        <div className="text-sm">Book a session</div>
+                      </div>
+                    </Button>
+                </a>
               </motion.div>
 
               <motion.div
@@ -589,9 +594,9 @@ export default function SinglePageContent() {
                           2. 為線上『即時文字』溝通。</p>
                           <p className="text-[#B47A8F] mb-2">
                           3. 溝通者需為主要照顧者。</p>
-                          <p className="text-[#B47A8F]">
+                          <p className="text-[#B47A8F] mb-2">
                           4.溝通前，須向動物告知有此次溝通。</p>
-                          <p className="text-[#B47A8F]">
+                          <p className="text-[#B47A8F] mb-2">
                           5.帶著一顆全然敞開的心，一起聊聊吧！</p>
                         </div>
                       </div>
