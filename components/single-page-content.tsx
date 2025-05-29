@@ -630,9 +630,9 @@ export default function SinglePageContent() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="grid grid-cols-1 md:grid-cols-2 gap-8"
+                className="flex justify-center"
               >
-                <motion.div variants={itemVariants}>
+                <motion.div variants={itemVariants} className="max-w-md mx-auto text-center">
                   <h3 className="text-2xl font-bold text-[#B47A8F] mb-6">Contact Information</h3>
                   <div className="space-y-6">
                     <div className="flex items-center">
@@ -654,61 +654,6 @@ export default function SinglePageContent() {
                       <p className="text-[#B47A8F]">Taipei, Taiwan</p>
                     </div>
                   </div>
-
-                  <div className="mt-8">
-                    <h4 className="text-xl font-bold text-[#B47A8F] mb-4">Session Types</h4>
-                    <ul className="space-y-2 text-[#B47A8F]">
-                      <li>• Initial Consultation (60 minutes)</li>
-                      <li>• Follow-up Session (45 minutes)</li>
-                      <li>• Emergency Session (30 minutes)</li>
-                      <li>• End-of-Life Support (as needed)</li>
-                    </ul>
-                    <p className="mt-4 text-[#B47A8F]">
-                      Sessions available in-person (Taipei area) or remotely via video call.
-                    </p>
-                  </div>
-                </motion.div>
-
-                <motion.div variants={itemVariants}>
-                  <Card className="bg-[#fff7ea]/90 backdrop-blur-sm border-none shadow-md">
-                    <CardContent className="pt-6">
-                      <h3 className="text-xl font-bold text-[#B47A8F] mb-4">Send a Message</h3>
-
-                      <form className="space-y-4">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          <div>
-                            <Input
-                              placeholder="Your Name"
-                              className="bg-[#fff7ea]/70 border-[#E8A87C] focus:border-[#B47A8F]"
-                            />
-                          </div>
-                          <div>
-                            <Input
-                              placeholder="Your Email"
-                              type="email"
-                              className="bg-[#fff7ea]/70 border-[#E8A87C] focus:border-[#B47A8F]"
-                            />
-                          </div>
-                        </div>
-                        <div>
-                          <Input
-                            placeholder="Your Pet's Name and Type"
-                            className="bg-[#fff7ea]/70 border-[#E8A87C] focus:border-[#B47A8F]"
-                          />
-                        </div>
-                        <div>
-                          <Textarea
-                            placeholder="How can we help you and your pet?"
-                            className="bg-[#fff7ea]/70 border-[#E8A87C] focus:border-[#B47A8F]"
-                            rows={5}
-                          />
-                        </div>
-                        <Button type="submit" className="w-full bg-[#B47A8F] hover:bg-[#9D6A7F] text-white">
-                          Send Message
-                        </Button>
-                      </form>
-                    </CardContent>
-                  </Card>
                 </motion.div>
               </motion.div>
             </div>
