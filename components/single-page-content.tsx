@@ -208,7 +208,7 @@ export default function SinglePageContent() {
                         <circle cx="12" cy="12" r="4.5" />
                         <circle cx="17.5" cy="6.5" r="1.5" />
                       </svg>
-                      <span className="text-base font-medium">Visit Instagram</span>
+                      <span className="text-base font-medium flex items-center">Visit Instagram <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></span>
                     </div>
                   </Button>
                 </a>
@@ -258,7 +258,12 @@ export default function SinglePageContent() {
                     className="bg-[#B47A8F] hover:bg-[#9D6A7F] text-white px-8 py-6"
                     onClick={() => setShowDetailPage(true)}
                   >
-                    Read Details
+                    <span className="flex items-center">
+                      了解更多
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </span>
                   </Button>
                 </motion.div>
               </motion.div>
@@ -369,7 +374,7 @@ export default function SinglePageContent() {
                         </svg>
                       </div>
                         <div>
-                          <p className="text-sm text-[#B47A8F]">Visit Instagram</p>
+                          <p className="text-sm text-[#B47A8F] flex items-center">Visit Instagram <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></p>
                         </div>
                       </div>
                     </CardContent>
@@ -402,7 +407,7 @@ export default function SinglePageContent() {
                         </svg>
                       </div>
                         <div>
-                          <p className="text-sm text-[#B47A8F]">Visit Instagram</p>
+                          <p className="text-sm text-[#B47A8F] flex items-center">Visit Instagram <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></p>
                         </div>
                       </div>
                     </CardContent>
@@ -435,7 +440,7 @@ export default function SinglePageContent() {
                         </svg>
                       </div>
                         <div>
-                          <p className="text-sm text-[#B47A8F]">Visit Instagram</p>
+                          <p className="text-sm text-[#B47A8F] flex items-center">Visit Instagram <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></p>
                         </div>
                       </div>
                     </CardContent>
@@ -467,7 +472,7 @@ export default function SinglePageContent() {
                         </svg>
                       </div>
                         <div>
-                          <p className="text-sm text-[#B47A8F]">Visit Instagram</p>
+                          <p className="text-sm text-[#B47A8F] flex items-center">Visit Instagram <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></p>
                         </div>
                       </div>
                     </CardContent>
