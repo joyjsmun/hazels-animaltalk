@@ -202,7 +202,7 @@ export default function SinglePageContent() {
                     />
                   </div>
                 </div>
-                <h1 className="text-3xl md:text-6xl font-bold text-[#B47A8F] mb-6">Hazel&apos;s Animal Talk</h1>
+                <h1 className="text-4xl md:text-6xl font-bold text-[#B47A8F] mb-6">Hazel&apos;s Animal Talk</h1>
                 <h2 className="text-xl md:text-4xl font-semibold text-[#B47A8F] mb-6">讓每份陪伴，充滿愛與理解。</h2>
                 <p className="text-xl md:text-2xl text-[#ebb97a] max-w-2xl mx-auto mb-6 font-medium uppercase tracking-wider">
                   LISTEN. CONNECT. UNDERSTAND.

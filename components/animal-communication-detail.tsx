@@ -124,7 +124,7 @@ export default function AnimalCommunicationDetail({ onBack }: AnimalCommunicatio
         </div>
       </header>
 
-      <div className="container mx-auto px-4 md:px-8 py-12">
+      <div className="container mx-auto px-4 md:px-8 py-2">
         <motion.div
           variants={containerVariants}
           initial="hidden"
