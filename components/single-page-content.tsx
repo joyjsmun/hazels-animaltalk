@@ -325,15 +325,20 @@ export default function SinglePageContent() {
                 className="flex flex-col md:flex-row gap-8 items-center"
               >
                 <motion.div variants={itemVariants} className="md:w-1/2">
-                  <div className="rounded-full overflow-hidden w-64 h-64 mx-auto mb-6 bg-[#f0e6d6] p-4">
-                    <div className="w-full h-full relative">
-                      <Image
-                        src="/images/hazel-logo.png"
-                        alt="Hazel's Animal Talk Logo"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
+                  <div className="relative w-64 h-64 mx-auto mb-6">
+                    <Image
+                      src="/images/hazel.png"
+                      alt="Hazel's Animal Talk Logo"
+                      fill
+                      priority
+                      sizes="256px"
+                      className="object-cover rounded-full"
+                      style={{
+                        objectPosition: 'center',
+                        width: '100%',
+                        height: '100%'
+                      }}
+                    />
                   </div>
                 </motion.div>
 
