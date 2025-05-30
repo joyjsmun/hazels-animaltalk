@@ -42,7 +42,7 @@ export default function LoadingScreen() {
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold text-[#B47A8F] mb-2">Hazel&apos;s Animal Talk</h1>
-        <p className="text-lg md:text-xl text-[#B47A8F] mb-8">連結您與寵物的心靈橋樑</p>
+        <p className="text-lg md:text-xl text-[#B47A8F] mb-8">連結您與毛孩的心靈橋樑</p>
 
         <div className="mb-8">
           <PawPrintLoader />

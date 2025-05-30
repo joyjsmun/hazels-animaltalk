@@ -78,7 +78,7 @@ export default function SinglePageContent() {
     { id: "hero", label: "Home", labelCh: "首頁" },
     { id: "introduction", label: "What is Animal Communication", labelCh: "動物溝通介紹" },
     { id: "about", label: "About", labelCh: "關於" },
-    { id: "stories", label: "Stories", labelCh: "見證" },
+    { id: "stories", label: "Stories", labelCh: "個案故事" },
     { id: "services", label: "Services", labelCh: "服務" },
     { id: "contact", label: "Contact", labelCh: "聯絡" },
   ]
@@ -454,7 +454,7 @@ export default function SinglePageContent() {
                   </div>
                     <CardContent className="pt-4 md:pt-6">
                       <p className="text-[#B47A8F] mb-4">
-                        姉姊投餵的流浪貓『小咪』，慢慢地對這裡產生感情了，原來看似保持距離的相處，原來小咪的心中放著滿滿的感謝～
+                      姊姊投餵的流浪貓『小咪』，慢慢地對這裡產生感情了，原來看似保持距離的相處，原來小咪的心中放著滿滿的感謝～
 
                       </p>
                     
@@ -702,7 +702,7 @@ export default function SinglePageContent() {
                       <div className="flex flex-col items-center">
                         <div className="inline-block text-left">
                           <p className="text-[#B47A8F] mb-2">
-                          1. 準備動物『看向鏡頭的清晰全身照』3-5張。</p>
+                          1. 提供動物『看向鏡頭的清晰全身照』3-5張。</p>
                           <p className="text-[#B47A8F] mb-2">
                           2. 為線上『即時文字』溝通。</p>
                           <p className="text-[#B47A8F] mb-2">
@@ -732,7 +732,7 @@ export default function SinglePageContent() {
               >
                 <h2 className="text-[1.775rem] md:text-5xl font-semibold text-[#B47A8F] mb-4">您正在找的，也許就是這裡
                 </h2>
-                <h3 className="text-lg md:text-2xl font-medium text-[#B47A8F] mb-6">無論是預約、提問，都歡迎你留下訊息。
+                <h3 className="text-lg md:text-2xl font-medium text-[#B47A8F] mb-6">無論是預約、提問，都歡迎留下訊息。
                 </h3>
                 <div className="text-lg px-4 md:text-xl text-[#E8A87C] font-medium tracking-wider text-left md:text-center">
                 <p className="mb-4 md:mb-0 md:inline text-center">I'm here —</p>
@@ -819,7 +819,7 @@ export default function SinglePageContent() {
                 </div>
 
                 <div className="text-center md:text-right">
-                  <p className="text-sm text-[#B47A8F]">連結您與寵物的心靈橋樑</p>
+                  <p className="text-sm text-[#B47A8F]">連結您與毛孩的心靈橋樑</p>
                   <p className="text-xs text-[#B47A8F] mt-1">
                     &copy; {new Date().getFullYear()} Hazel&apos;s Animal Talk. All rights reserved.
                   </p>
