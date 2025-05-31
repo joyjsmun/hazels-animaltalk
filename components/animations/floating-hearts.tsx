@@ -21,8 +21,8 @@ export default function FloatingHearts() {
       id: i,
       x: Math.random() * 100, // random x position (0-100%)
       size: Math.random() * 20 + 10, // random size (10-30px)
-      delay: Math.random() * 20, // random delay (0-20s)
-      duration: Math.random() * 15 + 25, // random duration (25-40s)
+      delay: Math.random() * 12, // random delay (0-12s)
+      duration: Math.random() * 10 + 15, // random duration (15-25s)
       opacity: Math.random() * 0.5 + 0.2, // random opacity (0.2-0.7)
     }))
 
