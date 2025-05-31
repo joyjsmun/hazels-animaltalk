@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Hazel's Animal Talk",
   description: "Animal Communication Services by Hazel",
   generator: 'v0.dev',
+  metadataBase: new URL('https://hazelhealing.life'),
   icons: {
     icon: '/images/hazel-logo.png',
     apple: '/images/hazel-logo.png',

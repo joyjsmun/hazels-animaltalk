@@ -360,7 +360,7 @@ export default function MainContent() {
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-[#B47A8F] mr-3" />
-                  <p className="text-[#B47A8F]">hazel@animaltalk.com</p>
+                  <p className="text-[#B47A8F]">hazel@hazelhealing.life</p>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 text-[#B47A8F] mr-3" />
