@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Hazel's Animal Talk",
-  description: "Animal Communication Services by Hazel",
+  title: "Hazel’s Animal Talk 動物溝通",
+  description: "連結您與毛孩的心靈橋樑 Listen, Connect, Understand",
   generator: 'v0.dev',
   metadataBase: new URL('https://hazelhealing.life'),
   icons: {
