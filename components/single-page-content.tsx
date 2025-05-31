@@ -188,8 +188,11 @@ export default function SinglePageContent() {
           </header>
 
           {/* Hero Section */}
-          <section id="hero" className="min-h-screen flex items-center justify-center px-4 md:px-8 pt-16">
-            <div className="container px-2 mb:px-none mx-auto text-center">
+          <section id="hero" className="min-h-screen flex items-center justify-center px-4 md:px-8 pt-16 relative">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <FloatingHearts />
+            </div>
+            <div className="container px-2 mb:px-none mx-auto text-center relative z-10">
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                 <div className="mb-8 flex justify-center">
                   <div className="w-48 h-48 md:w-64 md:h-60 relative rounded-full overflow-hidden p-2">
