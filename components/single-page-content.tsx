@@ -279,8 +279,7 @@ export default function SinglePageContent() {
                   『動物溝通』是一種不依賴語言的心靈對話，透過靜心與直覺，聆聽毛孩內在真正的聲音。溝通師會進入安靜、穩定的狀態，用心去接收動物傳遞來的畫面、感受、情緒，進行一場溫柔的交流。
 </p>
 <p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-4 md:mb-8 max-w-6xl text-left">
-很多時候，其實牠們也有豐富的情緒與想法，只是用另一種方式在說話。透過動物溝通，我們可以更了解牠們的需要、牠們的愛，甚至牠們過去的經歷與心願。
-</p>
+動物擁有細膩的情緒與豐富的內在，只是表達方式不同於人類。透過動物溝通，我們能更貼近牠們的世界，理解牠們的需求與愛，並成為更懂牠的家人。</p>
 <p className="text-lg md:text-xl text-[#B47A8F] leading-relaxed mb-4 md:mb-8 max-w-6xl text-left">
 這不只是人與動物之間的橋樑，更是一段彼此理解、彼此陪伴的療癒旅程。用心傾聽，就能聽見愛的聲音。
 </p>
@@ -325,14 +324,14 @@ export default function SinglePageContent() {
                 className="flex flex-col md:flex-row gap-8 items-center"
               >
                 <motion.div variants={itemVariants} className="md:w-1/2">
-                  <div className="relative w-64 h-64 mx-auto mb-6">
+                  <div className="relative w-64 h-64 md:w-80 md:h-80 md:mt-10 mx-auto mb-6">
                     <Image
                       src="/images/hazel.png"
                       alt="Hazel's Animal Talk Logo"
                       fill
                       priority
-                      sizes="256px"
-                      className="object-cover rounded-full"
+                      sizes="384px"
+                      className="object-cover rounded-full md:rounded-md"
                       style={{
                         objectPosition: 'center',
                         width: '100%',
@@ -362,9 +361,9 @@ export default function SinglePageContent() {
                     希望幫助更多人與動物，搭建起一個美好的橋樑，讓彼此更靠近、更安心。
 同時，每筆收入的 10% 將捐給友善動物團體，希望透過這份能力，讓愛持續流動。
                       </p>
-                    <p className="text-xl md:text-2xl text-[#ebb97a] max-w-2xl mx-auto mb-4 font-medium uppercase tracking-wider text-center">
+                    {/* <p className="text-xl md:text-2xl text-[#ebb97a] max-w-2xl mx-auto mb-4 font-medium uppercase tracking-wider text-center">
                       LISTEN. CONNECT. UNDERSTAND.
-                    </p>
+                    </p> */}
                   </div>
                 </motion.div>
               </motion.div>
@@ -381,7 +380,7 @@ export default function SinglePageContent() {
                 viewport={{ once: true }}
                 className="text-center mb-16"
               >
-                <h2 className="text-[1.775rem] md:text-5xl font-bold text-[#B47A8F] mb-4">來自毛孩悄悄話</h2>
+                <h2 className="text-[1.775rem] md:text-5xl font-bold text-[#B47A8F] mb-4">來自毛孩的悄悄話</h2>
                 <p className="text-xl md:text-2xl text-[#ebb97a] max-w-2xl mx-auto mb-0 md:mb-4 font-medium tracking-wider">
                   <span className="block md:inline">Real stories.</span>{" "}
                   <span className="block md:inline">Honest moments.</span>
