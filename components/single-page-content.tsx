@@ -774,6 +774,16 @@ export default function SinglePageContent() {
                       </div>
                       <p className="text-[#B47A8F] flex items-center">IG : <a href="https://www.instagram.com/hazel_animaltalk/" target="_blank" rel="noopener noreferrer" className="flex items-center hover:underline">hazel_animaltalk <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a></p>
                     </div>
+                    
+                    <div className="flex items-center">
+                      <div className="text-[#B47A8F] mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                      </div>
+                      <p className="text-[#B47A8F] flex items-center">官方Line： <a href="https://line.me/R/ti/p/@699dqwrx" target="_blank" rel="noopener noreferrer" className="flex items-center hover:underline">@699dqwrx <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a></p>
+                    </div>
+                    
                     <div className="flex items-center">
                       <Mail className="h-5 w-5 text-[#B47A8F] mr-3" />
                       <p className="text-[#B47A8F]">hazelhealing66@gmail.com</p>
