@@ -763,7 +763,7 @@ export default function SinglePageContent() {
                   </div>
                   
                   <h3 className="text-2xl font-bold text-[#B47A8F] mb-6">Contact Information</h3>
-                  <div className="space-y-6">
+                  <div className="space-y-6 pl-8">
                     <div className="flex items-center">
                       <div className="text-[#B47A8F] mr-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -801,10 +801,7 @@ export default function SinglePageContent() {
                       </div>
                       <p className="text-[#B47A8F] flex items-center">預約表單<a href="https://forms.gle/JqMtwd3UaZTMYa9p9" target="_blank" rel="noopener noreferrer" className="flex items-center hover:underline"> - Reservation Form <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a></p>
                     </div>
-                    <div className="flex items-center">
-                      <MapPin className="h-5 w-5 text-[#B47A8F] mr-3" />
-                      <p className="text-[#B47A8F]">Taipei, Taiwan</p>
-                    </div>
+          
                   </div>
                 </motion.div>
               </motion.div>
